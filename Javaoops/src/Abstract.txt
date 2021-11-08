@@ -1,0 +1,29 @@
+ABSTRACT AND ITS METHODS
+
+1.If any class has method as abstract then that class must be declared abstract?
+answer: 'YES', if we didn't make class as abstract the compiler will throw error.
+
+2.Abstract class cannot be Instantiated
+answer: 'Yes',we cannot create object of abstract class,but we can inherit methods to subclass and create object of subclass.
+
+3.When we extend the Abstract we need to provide implementation using overriding otherwise declare the subclass also abstract.
+answer: the principle of abstract specifies that the subclass must provide implementation to the inherited abstract methods,If not the subclass must be declared as abstract.
+public class subclass extends Abstracts
+{
+	public static void main(String args[]) {
+		@override
+		public void test()
+		{
+			System.out.println("implementing abstract method by overriding it");
+		}
+	}
+}
+
+4.Abstract class cannot be Private
+answer:'yes',Because we cant implement abstract methods in subclass.
+
+5.Abstract class cannot be Final
+answer:'yes',because we cannot override the abstract class methods and can't provide implementation.
+
+6.we can declare the class as abstract without having Abstract method
+answer:Yes,we can declare class as Abstract but can't create object of it.
